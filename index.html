@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HCLTech - Supercharging Progress</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background:#f3f4f8;
+    color:#111827;
+}
+
+/* NAVBAR */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:white;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color:#374151;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* HERO */
+
+.hero{
+    background-image: url("https://hcltech.imgix.net/sites/default/files/brand-corporate/summary-thumbnail/2025-12/Banner-7_0.png?auto=compress&fit=crop&ixlib=php-4.1.0&v=2"), linear-gradient(120deg,#c7d2fe,#e0e7ff,#dbeafe);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right center, center;
+    background-size: 320px auto, cover;
+    padding:100px 80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#4b5563;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:12px 25px;
+    background:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    color:#2563eb;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* .hero img is no longer used; image moved to background */
+
+/* ROI SECTION */
+
+.roi{
+    margin:60px 80px;
+    background:linear-gradient(90deg,#4338ca,#6366f1);
+    padding:40px;
+    border-radius:16px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.roi h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.roi-box{
+    max-width:250px;
+}
+
+/* LATEST */
+
+.section{
+    padding:80px;
+}
+
+.section h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+/* GROWTH SECTION */
+
+.growth{
+    background:linear-gradient(120deg,#e9d5ff,#e0e7ff);
+    padding:100px 80px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.growth-text{
+    max-width:600px;
+}
+
+.growth-text h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.growth-text p{
+    font-size:18px;
+    color:#4b5563;
+}
+
+.growth-boxes{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.growth-card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    width:350px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.growth-card h4{
+    margin-bottom:10px;
+    color:#4338ca;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+    color:#9ca3af;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.hero{
+    background-position: center top, center;
+    background-size: cover, cover;
+    flex-direction:column;
+    text-align:center;
+}
+
+/* hero image tag removed, so no margin tweak needed */
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.growth{
+    flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HCLTech</div>
+    <nav>
+        <a href="#">What We Do</a>
+        <a href="#">Industries</a>
+        <a href="#">Ecosystem</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" aria-label="Hero">
+    <div class="hero-text">
+        <h1>HCLTech Named to Fortune’s World’s Most Admired Companies 2026</h1>
+        <p>Recognized for technology-led innovation, value creation and consistent performance.</p>
+        <a href="#" class="btn">Read More →</a>
+    </div>
+    <!-- image removed; now applied as the hero background (right side) -->
+</section>
+
+<section class="roi">
+    <div class="roi-box">
+        <h3>45% Reduction</h3>
+        <p>App development effort enabled by AI.</p>
+    </div>
+
+    <div class="roi-box">
+        <h3>20% IT Ops MTTR</h3>
+        <p>Reduction enabled by AI tools.</p>
+    </div>
+
+    <div class="roi-box">
+        <h3>$100M Cost Savings</h3>
+        <p>Through AI-powered solutions.</p>
+    </div>
+
+    <div class="roi-box">
+        <h3>87% Time Reduction</h3>
+        <p>AI-enabled investigation process.</p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Latest Highlights</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ6LWDdstRRPQoXfaa3K3R1aCjJVhgYubFfg&s">
+            <div class="card-content">
+                <h4>AI for Inclusive Growth</h4>
+                <p>Leadership lessons from Davos.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZyS_5uukj-kAI-EByvKqVnPtAF_4Co050g&s">
+            <div class="card-content">
+                <h4>Unlocking Business Value with AI</h4>
+                <p>AI and GenAI insights from industry experts.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.gettyimages.com/id/1243914672/photo/hcl-technologies-announces-earning-results.jpg?s=594x594&w=gi&k=20&c=Bk6zeXH9lyUbIwC1qdFglZtvvPWIQPziIHYY7m9qwVw=">
+            <div class="card-content">
+                <h4>HCLTech News</h4>
+                <p>Latest transformation partnerships.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="growth">
+    <div class="growth-text">
+        <h2>Driving Your Growth: Technology is Our Engine, Innovation Our Fuel</h2>
+        <p>Whether you're building smarter products, scaling with cloud, or unlocking AI efficiencies, our solutions are built to take you further, faster.</p>
+    </div>
+
+    <div class="growth-boxes">
+        <div class="growth-card">
+            <h4>AI</h4>
+            <p>Helping identify and seize AI opportunities to accelerate business processes.</p>
+        </div>
+
+        <div class="growth-card">
+            <h4>Cloud</h4>
+            <p>Enterprise cloud optimization through innovation and agility.</p>
+        </div>
+
+        <div class="growth-card">
+            <h4>Engineering</h4>
+            <p>Accelerate product development and maximize innovation.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 HCLTech. All Rights Reserved.
+</footer>
+
+</body>
+</html>
